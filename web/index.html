@@ -9,23 +9,102 @@
 <script src="script.js"></script>
 <!-- Default style sheet -->
 <link rel="stylesheet" type="text/css" href="style.css" title="default"/>
+<link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 480px)" href="skinny.css" />
 <script src="plugins/jquery.fittext.js"></script>
 <script>
   //$("h1#title, h1.scoreTotal").fitText();
  
 </script>
-
 </head>
 <body>
 <div id="siteContainer">
-<div id="topBar"></div>
 <div id="pageContainer">
   <div class="page" id="page1">
-  	<div class="pageLink"><a href="#page2">hey</a></div>
+    <div class="leftPage">
+      <div class="outside">
+        <div class="inside"><img id="face" class="rotate" src="images/self.png" /></div>
+      </div>
+    </div>
+    <div class="rightPage">
+      <div class="outside">
+        <div class="inside">
+          <p>Hello, <br />
+            my name is <br />
+            Max</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="page" id="page2"><div class="pageLink"><a href="#page3">hey</a></div></div>
-  <div class="page" id="page3"><div class="pageLink"><a href="#page4">hey</a></div></div>
-  <div class="page" id="page4"><div class="pageLink"><a href="#page1">hey</a></div></div>
+  <div class="page" id="page2">
+    <div class="leftPage">
+      <div class="outside">
+        <div class="inside">
+          <p>I live<br />
+            in San Francisco<br />
+            with my brother<br />
+            Joe</p>
+        </div>
+      </div>
+    </div>
+    <div class="rightPage">
+      <div class="outside">
+        <div class="inside"> <img id="chicago" src="images/chicago.png" /> </div>
+      </div>
+    </div>
+  </div>
+  <div class="page" id="page3">
+    <div class="leftPage">
+      <div class="outside">
+        <div class="inside">   <p>I work<br />
+            for the rideshare<br />
+            <a href="maxLyft.com/index.html" target="_blank">Lyft </a></p></div>
+      </div>
+    </div>
+    <div class="rightPage">
+      <div class="outside">
+        <div class="inside">
+         <img id="stache" class="rotate" src="images/lyftStache.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page" id="page4">
+    <div class="leftPage">
+      <div class="outside">
+        <div class="inside">
+          <p>My Latest Projects:</p>
+        </div>
+      </div>
+    </div>
+    <div class="rightPage">
+      <div class="outside">
+        <div class="inside">
+          <p><a href="pointSystem.com/index.html" target="_blank">Point System</a><br />
+            <br />
+            <a href="http://github.com/MaxwellVolz" target="_blank">My Github</a><br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page" id="page5">
+    <div class="leftPage">
+      <div class="outside">
+        <div class="inside">
+          <p>more to come...</p>
+        </div>
+      </div>
+    </div>
+    <div class="rightPage">
+      <div class="outside">
+        <div class="inside"> <a href="#page1">
+          <p><a href="#page1">Top
+          </a>
+          <p></a> 
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 </body>
 </html>

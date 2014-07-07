@@ -5,6 +5,7 @@ setTimeout(function () {   window.scrollTo(0, 1); }, 1000);
 $(window).bind("load", function() {
    // code here
    //$("h1#title").fitText();
+   sizeContent();
     
 });
 
@@ -25,11 +26,20 @@ function sizeContent() {
 	//determine sizes
 	var pageWidth = $("body").width();
 	var pageHeight = $("body").height();
+	var faceMargin = $(".leftPage").width() / 2 - $("img#face").width() /2;
+	var faceSize = $(".leftPage").width() * .8;
+
 	
-	$("#pageContainer").css("width",pageWidth*2);
+	
+	$("#pageContainer").css("width",pageWidth);
 	
 	$(".page").css("width",pageWidth);
 	
+	//$("img#face").css("margin-left",faceMargin);
+	//$("p").css("width",faceMargin);
+	$("img#face").css("height", faceSize);
+	$("p").css("width",pageWidth * .7);
+	$("p,h1").fitText();
 	
 }
 

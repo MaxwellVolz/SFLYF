@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="minimal-ui, user-scalable=no"/>
+
+<title>Point System</title>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="script.js"></script>
+<!-- Default style sheet -->
+<link rel="stylesheet" type="text/css" href="style.css" title="default"/>
+
+<script src="plugins/jquery.fittext.js"></script>
+<script>
+  $("h1#title, h1.scoreTotal").fitText();
+ 
+</script>
+
+
+
+</head>
+<body>
+<div id="appContainer">
+  <div id="home" class="page">
+  	<div id="titleContainer">
+   		<h1 id="title">How many players?</h1>
+    </div>
+    <div id="playerSelect">
+      <div id="minus">
+        <h1>-</h1>
+      </div>
+      <div id="plus">
+        <h1>+</h1>
+      </div>
+      <div>
+        <h1 id="players">0</h1>
+      </div>
+    </div>
+    <div id="startGame">
+      <div id="check"></div>
+    </div>
+  </div>
+  <div id="scoreboard" class="page">
+    <input id="resetGame" type="button" value="Reset" onClick="window.location.reload()">
+    <table id="tbl">
+      <tr id="mainRow">
+        <td id="mainD"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+</body>
+</html>
